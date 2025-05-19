@@ -1,0 +1,171 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url(Images/Ballon_Background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Information {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.Information h1, h2, h3, button {
+    margin-top: 20px;
+}
+
+.Information button {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+    box-shadow: 0 0 5px pink;
+}
+
+.Information button:hover{
+    box-shadow: 0 0 5px pink, 0 0 25px pink, 0 0 50px pink, 0 0 100px pink, 0 0 200px pink;
+}
+
+.Birthday_cake {
+    text-align: center;
+    display: none;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.Birthday_cake h3 {
+    margin-top: 0px;
+    margin-top: 15px;
+}
+
+.Birthday_cake img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 15px;
+}
+
+.kavithai-section {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    display: none;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cake_image_3D {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cake_image_3D img {
+    width: 10rem;
+    height: 10rem;
+    padding: 10px;
+}
+
+.kavithai-section button {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+}
+
+.kavithai-section button:hover{
+    box-shadow: 0 0 5px pink, 0 0 25px pink, 0 0 50px pink, 0 0 100px pink, 0 0 200px pink;
+}
+
+.photos-container {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-photos {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    animation: fade-right 2s ease-in-out;
+}
+
+.main-photos img {
+    width: 10rem;
+    height: 10rem;
+    padding: 10px; 
+}
+
+.Again-wish {
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .cake_image_3D img {
+        width: 7rem;
+        height: 7rem;
+        padding: 10px;
+    }
+
+    .main-photos img {
+        width: 8rem;
+        height: 8rem;
+        padding: 10px;
+    }
+}
+
+.raindrop {
+    position: absolute;
+    top: -10%; 
+    font-size: 2rem;
+    color: red;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 110%; 
+        opacity: 0;
+    }
+}
+
